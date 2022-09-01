@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lavender;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+}
+
+#header {
+    display: flex;
+    place-content: center;
+    background-color: lavender;
+    font-size: 3rem;
+    margin: 10px;
+}
+
+#sub-header {
+    margin: 20px;
+}
+
+#new-book-button {
+    margin-left: 5vw;
+    width: 10vw;
+    height: 5vh;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px purple;
+}
+
+#book-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 200px));
+    gap: 30px;
+    row-gap: 50px;
+    grid-auto-rows: 250px;
+}
+
+.book {
+    height: 250px;
+    border: solid purple;
+    border-radius: 10px;
+    background-color: lightcoral;
+    padding: 10px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.title,
+.author,
+.pages {
+    grid-column: span 2;
+    font-size: 1.25rem;
+}
+
+.read-button,
+.remove-button {
+    height: 3rem;
+    align-self: flex-end;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px purple;
+}
+
