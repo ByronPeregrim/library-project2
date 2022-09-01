@@ -46,6 +46,7 @@ body {
     grid-template-rows: 1fr 1fr 1fr 2fr;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    box-shadow: 1px 1px 2px 2px lightgray;
 }
 
 .title,
@@ -63,3 +64,6 @@ body {
     box-shadow: 1px 1px 1px 1px purple;
 }
 
+.read {
+    background-color: lightgreen;
+}
